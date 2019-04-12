@@ -1,25 +1,22 @@
 //
-//  ViewController.swift
+//  DetailViewController.swift
 //  CoordinatorPatternExperiment
 //
 //  Created by Digital Ozellesmis on 12.04.2019.
 //  Copyright © 2019 Digital Ozellesmis. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
-class ViewController: UIViewController, Storyboardable {
-
+class DetailViewController: UIViewController, Storyboardable {
+    
     weak var coordinator: MainCoordinator?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    @IBAction func onDetailButtpnTapped(_ sender: UIButton) {
-        coordinator?.navigateToDetailController()
+        
+        title = "Detail"
     }
     
 }
-
