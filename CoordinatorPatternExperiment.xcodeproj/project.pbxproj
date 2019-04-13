@@ -18,6 +18,14 @@
 		984A037522610025007B0C05 /* Storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984A037422610025007B0C05 /* Storyboardable.swift */; };
 		984A0377226101A0007B0C05 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984A0376226101A0007B0C05 /* MainCoordinator.swift */; };
 		984A037922610385007B0C05 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984A037822610385007B0C05 /* DetailViewController.swift */; };
+		BF47067F2261D30200BC9C29 /* DetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF47067E2261D30200BC9C29 /* DetailCoordinator.swift */; };
+		BF4706812261E13D00BC9C29 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4706802261E13D00BC9C29 /* MainTabBarController.swift */; };
+		BF4706832261E28D00BC9C29 /* CurrenciesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4706822261E28D00BC9C29 /* CurrenciesCoordinator.swift */; };
+		BF4706852261E2D000BC9C29 /* CurrencyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4706842261E2D000BC9C29 /* CurrencyController.swift */; };
+		BF4706872261E63200BC9C29 /* SomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4706862261E63200BC9C29 /* SomeViewController.swift */; };
+		BF4706892261E65400BC9C29 /* SomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4706882261E65400BC9C29 /* SomeCoordinator.swift */; };
+		BF47068F2261F28900BC9C29 /* UINavigationControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF47068E2261F28900BC9C29 /* UINavigationControllerExtensions.swift */; };
+		BF4706912261F2B500BC9C29 /* ConcreteCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4706902261F2B500BC9C29 /* ConcreteCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +63,14 @@
 		984A037422610025007B0C05 /* Storyboardable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboardable.swift; sourceTree = "<group>"; };
 		984A0376226101A0007B0C05 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		984A037822610385007B0C05 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		BF47067E2261D30200BC9C29 /* DetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCoordinator.swift; sourceTree = "<group>"; };
+		BF4706802261E13D00BC9C29 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		BF4706822261E28D00BC9C29 /* CurrenciesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesCoordinator.swift; sourceTree = "<group>"; };
+		BF4706842261E2D000BC9C29 /* CurrencyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyController.swift; sourceTree = "<group>"; };
+		BF4706862261E63200BC9C29 /* SomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeViewController.swift; sourceTree = "<group>"; };
+		BF4706882261E65400BC9C29 /* SomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeCoordinator.swift; sourceTree = "<group>"; };
+		BF47068E2261F28900BC9C29 /* UINavigationControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtensions.swift; sourceTree = "<group>"; };
+		BF4706902261F2B500BC9C29 /* ConcreteCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcreteCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,14 +121,20 @@
 		984A03422260FF7C007B0C05 /* CoordinatorPatternExperiment */ = {
 			isa = PBXGroup;
 			children = (
+				BF47068C2261F26900BC9C29 /* Extensions */,
+				BF47068B2261ED2C00BC9C29 /* Favorites */,
+				BF47068A2261ECFD00BC9C29 /* Currencies */,
 				984A03712260FFD5007B0C05 /* Coordinator */,
 				984A03432260FF7C007B0C05 /* AppDelegate.swift */,
-				984A03452260FF7C007B0C05 /* ViewController.swift */,
 				984A037822610385007B0C05 /* DetailViewController.swift */,
+				BF47067E2261D30200BC9C29 /* DetailCoordinator.swift */,
 				984A03472260FF7C007B0C05 /* Main.storyboard */,
 				984A034A2260FF7F007B0C05 /* Assets.xcassets */,
 				984A034C2260FF7F007B0C05 /* LaunchScreen.storyboard */,
 				984A034F2260FF7F007B0C05 /* Info.plist */,
+				BF4706802261E13D00BC9C29 /* MainTabBarController.swift */,
+				BF4706862261E63200BC9C29 /* SomeViewController.swift */,
+				BF4706882261E65400BC9C29 /* SomeCoordinator.swift */,
 			);
 			path = CoordinatorPatternExperiment;
 			sourceTree = "<group>";
@@ -139,10 +161,44 @@
 			isa = PBXGroup;
 			children = (
 				984A03722260FFE4007B0C05 /* Coordinator.swift */,
+				BF4706902261F2B500BC9C29 /* ConcreteCoordinator.swift */,
 				984A037422610025007B0C05 /* Storyboardable.swift */,
-				984A0376226101A0007B0C05 /* MainCoordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		BF47068A2261ECFD00BC9C29 /* Currencies */ = {
+			isa = PBXGroup;
+			children = (
+				984A0376226101A0007B0C05 /* MainCoordinator.swift */,
+				984A03452260FF7C007B0C05 /* ViewController.swift */,
+			);
+			path = Currencies;
+			sourceTree = "<group>";
+		};
+		BF47068B2261ED2C00BC9C29 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				BF4706822261E28D00BC9C29 /* CurrenciesCoordinator.swift */,
+				BF4706842261E2D000BC9C29 /* CurrencyController.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		BF47068C2261F26900BC9C29 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BF47068D2261F27900BC9C29 /* UI */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BF47068D2261F27900BC9C29 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BF47068E2261F28900BC9C29 /* UINavigationControllerExtensions.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,12 +332,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF47067F2261D30200BC9C29 /* DetailCoordinator.swift in Sources */,
+				BF47068F2261F28900BC9C29 /* UINavigationControllerExtensions.swift in Sources */,
 				984A037522610025007B0C05 /* Storyboardable.swift in Sources */,
+				BF4706852261E2D000BC9C29 /* CurrencyController.swift in Sources */,
+				BF4706812261E13D00BC9C29 /* MainTabBarController.swift in Sources */,
 				984A03462260FF7C007B0C05 /* ViewController.swift in Sources */,
 				984A03442260FF7C007B0C05 /* AppDelegate.swift in Sources */,
+				BF4706872261E63200BC9C29 /* SomeViewController.swift in Sources */,
+				BF4706832261E28D00BC9C29 /* CurrenciesCoordinator.swift in Sources */,
+				BF4706892261E65400BC9C29 /* SomeCoordinator.swift in Sources */,
 				984A037922610385007B0C05 /* DetailViewController.swift in Sources */,
 				984A0377226101A0007B0C05 /* MainCoordinator.swift in Sources */,
 				984A03732260FFE4007B0C05 /* Coordinator.swift in Sources */,
+				BF4706912261F2B500BC9C29 /* ConcreteCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,7 +521,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WJ3596W3JB;
+				DEVELOPMENT_TEAM = HL7GD8S24Y;
 				INFOPLIST_FILE = CoordinatorPatternExperiment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -475,7 +539,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WJ3596W3JB;
+				DEVELOPMENT_TEAM = HL7GD8S24Y;
 				INFOPLIST_FILE = CoordinatorPatternExperiment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

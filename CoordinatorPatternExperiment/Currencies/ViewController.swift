@@ -17,8 +17,8 @@ class ViewController: UIViewController, Storyboardable {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    @IBAction func onDetailButtpnTapped(_ sender: UIButton) {
-        coordinator?.navigateToDetailController()
+    @IBAction func onDetailButtonTapped(_ sender: UIButton) {
+        coordinator?.navigateToDetailController(with: "Oguz Parlak")
     }
     
 }

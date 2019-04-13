@@ -14,15 +14,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
         
-        let navigationController = UINavigationController()
-        let mainCoordinator = MainCoordinator(navigationController: navigationController)
-        mainCoordinator.start()
+        /*
+            Boilerplate code for non-tab architecture apps
+            let navigationController = UINavigationController()
+            let mainCoordinator = MainCoordinator(navigationController: navigationController)
+            mainCoordinator.start()
+        */
         
+        // Init Window
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        window?.rootViewController = navigationController
+        window?.rootViewController = MainTabBarController() // navigationController 
         
         return true
     }

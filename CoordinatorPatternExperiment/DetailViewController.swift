@@ -11,12 +11,18 @@ import UIKit
 
 class DetailViewController: UIViewController, Storyboardable {
     
-    weak var coordinator: MainCoordinator?
+    @IBOutlet weak var label: UILabel!
+    
+    weak var coordinator: DetailCoordinator?
+    
+    var data: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         title = "Detail"
+        
+        label.text = data
     }
     
 }

@@ -19,10 +19,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0pI-Cf-DL7">
-                                <rect key="frame" x="164.5" y="70" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="145.5" y="70" width="84" height="30"/>
+                                <state key="normal" title="Go To Detail"/>
                                 <connections>
-                                    <action selector="onDetailButtpnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xyJ-ac-Cit"/>
+                                    <action selector="onDetailButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AFr-Gm-q1m"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -37,6 +37,57 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Currency Controller-->
+        <scene sceneID="sd1-FP-sXR">
+            <objects>
+                <viewController storyboardIdentifier="CurrencyController" id="aGT-Q7-z3p" customClass="CurrencyController" customModule="CoordinatorPatternExperiment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dmc-W5-YpL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currencies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w8f-d4-tuf">
+                                <rect key="frame" x="146" y="100" width="83" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oqQ-9D-EFw">
+                                <rect key="frame" x="164.5" y="182" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="aGT-Q7-z3p" eventType="touchUpInside" id="uqK-XT-0By"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oqQ-9D-EFw" firstAttribute="top" secondItem="w8f-d4-tuf" secondAttribute="bottom" constant="61" id="L2X-qp-1Ct"/>
+                            <constraint firstItem="oqQ-9D-EFw" firstAttribute="centerX" secondItem="C7b-Bn-Gdu" secondAttribute="centerX" id="Oor-6s-W75"/>
+                            <constraint firstItem="w8f-d4-tuf" firstAttribute="top" secondItem="C7b-Bn-Gdu" secondAttribute="top" constant="80" id="PoD-mP-RTe"/>
+                            <constraint firstItem="w8f-d4-tuf" firstAttribute="centerX" secondItem="C7b-Bn-Gdu" secondAttribute="centerX" id="Qna-BU-eU4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="C7b-Bn-Gdu"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ppu-7O-3hE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="670" y="743"/>
+        </scene>
+        <!--Some View Controller-->
+        <scene sceneID="i6F-cM-jN1">
+            <objects>
+                <viewController storyboardIdentifier="SomeViewController" id="06G-V7-h5w" customClass="SomeViewController" customModule="CoordinatorPatternExperiment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XRK-QJ-uwh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="mle-54-3Tu"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3zo-0N-sov" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1724" y="969"/>
+        </scene>
         <!--Detail View Controller-->
         <scene sceneID="gcf-yL-0dp">
             <objects>
@@ -44,9 +95,24 @@
                     <view key="view" contentMode="scaleToFill" id="Rcx-eP-SK7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJW-k8-UZR">
+                                <rect key="frame" x="166.5" y="97" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xJW-k8-UZR" firstAttribute="centerX" secondItem="tQI-i9-vX6" secondAttribute="centerX" id="hHk-yd-tad"/>
+                            <constraint firstItem="xJW-k8-UZR" firstAttribute="top" secondItem="tQI-i9-vX6" secondAttribute="top" constant="77" id="l7E-U6-Ym5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="tQI-i9-vX6"/>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="xJW-k8-UZR" id="jcW-Jt-uLk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s10-2J-6E6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

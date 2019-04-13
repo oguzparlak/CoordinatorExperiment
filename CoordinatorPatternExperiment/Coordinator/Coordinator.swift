@@ -9,11 +9,15 @@
 import Foundation
 import UIKit
 
-protocol Coordinator {
+protocol Coordinator: class {
     
+    /// NavigationController is the container of the owner of this Coordinator
     var navigationController: UINavigationController { get set }
+    
+    /// Append ChildCoordinators here to keep track of Coordinators
     var childCoordinators: [Coordinator] { get set }
     
+    /// Call start method when you want to initialize a ViewController
     func start()
     
 }

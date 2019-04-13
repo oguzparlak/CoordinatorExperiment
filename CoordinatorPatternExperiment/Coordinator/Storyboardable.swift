@@ -9,9 +9,7 @@
 import Foundation
 import UIKit
 
-protocol Storyboardable {
-    static func instantiate() -> Self
-}
+protocol Storyboardable { }
 
 extension Storyboardable where Self: UIViewController {
     static func instantiate() -> Self {

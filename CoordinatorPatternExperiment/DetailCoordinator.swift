@@ -1,34 +1,34 @@
 //
-//  MainCoordinator.swift
+//  DetailCoordinator.swift
 //  CoordinatorPatternExperiment
 //
-//  Created by Digital Ozellesmis on 12.04.2019.
+//  Created by Oguz Parlak on 13.04.2019.
 //  Copyright © 2019 Digital Ozellesmis. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
-class MainCoordinator: Coordinator {
+class DetailCoordinator: Coordinator {
+    
+    weak var parentCoordinator: MainCoordinator?
     
     var navigationController: UINavigationController
     
     var childCoordinators = [Coordinator]()
+    
+    // Data to be passed into DetailVC
+    var someData: String?
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
     
     func start() {
-        let mainViewController = ViewController.instantiate()
-        mainViewController.coordinator = self
-        navigationController.pushViewController(mainViewController, animated: false)
-    }
-    
-    func navigateToDetailController() {
         let detailVC = DetailViewController.instantiate()
         detailVC.coordinator = self
+        detailVC.data = someData
         navigationController.pushViewController(detailVC, animated: true)
     }
+    
     
 }
